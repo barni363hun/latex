@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - name: Installing prettier-plugin-latex
+    command: npm i prettier-plugin-latex
   - name: LaTeX auto-rebuild
     command: >
       while find . -name '*.tex' | xargs inotifywait -qqre modify .; do \
@@ -11,4 +13,4 @@ tasks:
 
 vscode:
   extensions:
-    - efoerster.texlab@1.10.0:/Vq+k9Ug/81LYWajjTgMpA==
+    - efoerster.texlab
