@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "prettier-plugin-latex": "^1.2.4"
+  }
+}
