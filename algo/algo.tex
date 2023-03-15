@@ -84,6 +84,9 @@ Legyen $A$ algoritmus. $e_1,\ldots,e_m$ elemi műveletek az algoritmusban
 $T(A,x)$ ahol x egy bemenet és a bemenet mérete $|x|$ például
 (tömb, halmaz\ldots) esetében az elemek száma.
 Az $e_i$ és $t_i$ és $|x|$ együtt a bonyolultság mértéke.
+
+\newpage
+
 \section{Esetek}
 \begin{itemize}
     \item Legjobb eset: \[T_{lj} = \min \{T(A,x):|x|=n\}\]
@@ -93,35 +96,12 @@ Az $e_i$ és $t_i$ és $|x|$ együtt a bonyolultság mértéke.
           $A$ algoritmus bemenete, ekkor
           \newline \[T_a(A,n) = \sum_{|x|=n}\Pr(x)T(A,x)\]
 \end{itemize}
-\begin{comment}
-\begin{lstlisting}[language=Java]
-public static int Keres(int[] A, int x) {
-    int i=0;
-    while (i<A.lenght && A[i]!=x) {
-        i++;
-    }
-    return i;
-}
-\end{lstlisting}
-\end{comment}
 
-\begin{table}
-    \centering
-    \caption{Példa:}
-    \begin{tabular}{cc}
-        \includegraphics[height=2cm]{keres} & Value \\
-    \end{tabular}
-\end{table}
-    \begin{comment}
-\begin{wrapfigure}{l}{0.60\textwidth}
-    \centering
-        \includegraphics[height=4cm]{keres}
-\end{wrapfigure}
+\centering
+\includegraphics[height=4cm]{keres}
 
 Itt Keres$(A,n,x)$ futási ideje: $c_1+(i+1)c_2+ic_3+c_4$
-\[T_{lj} = \min \{T(A,x):|x|=n\}\]
-\[T_{lr} = \max\{T(A,x):|x|=n\}\]
-
-\end{comment}
+\[T_{lj} = c_1+c_2+c_4 = O(1)\]
+\[T_{lr} = c_1+(n+1)c_2+nc_3+c_4=(c_2+c_3)n+c_1+c_2+c_4=O(n)\]
 
 \end{document}
