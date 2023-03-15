@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.3.6)  15 MAR 2023 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.3.6)  15 MAR 2023 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -593,7 +593,18 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen305
+\SC@CAPWD=\dimen306
+\SC@tempdima=\dimen307
+\SC@tempdimb=\dimen308
+\c@SC@C=\count311
+\SC@BOX=\box67
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -602,24 +613,31 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 ) (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen309
+\WF@size=\dimen310
+\c@WF@wrappedlines=\count312
+\WF@box=\box68
+\WF@everypar=\toks44
+Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count311
-\lst@gtempboxa=\box67
-\lst@token=\toks44
-\lst@length=\count312
-\lst@currlwidth=\dimen305
-\lst@column=\count313
-\lst@pos=\count314
-\lst@lostspace=\dimen306
-\lst@width=\dimen307
-\lst@newlines=\count315
-\lst@lineno=\count316
-\lst@maxwidth=\dimen308
+\lst@mode=\count313
+\lst@gtempboxa=\box69
+\lst@token=\toks45
+\lst@length=\count314
+\lst@currlwidth=\dimen311
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen312
+\lst@width=\dimen313
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen314
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count317
-\lst@skipnumbers=\count318
-\lst@framebox=\box68
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box70
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
@@ -632,15 +650,15 @@ File: switch.def 2020/02/14 3.40 Babel switching mechanism
 Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
  (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
-\babel@savecnt=\count319
-\U@D=\dimen309
+\babel@savecnt=\count321
+\U@D=\dimen315
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count320
+\bbl@dirlevel=\count322
 )
 Package babel Info: Making ` an active character on input line 2819.
-\c@footnote@add=\count321
-\c@footnote@ch=\count322
+\c@footnote@add=\count323
+\c@footnote@ch=\count324
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
@@ -650,26 +668,26 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language28) on input line 108.
 ))
-\c@theorem=\count323
-\c@definition=\count324
-\c@problem=\count325
+\c@theorem=\count325
+\c@definition=\count326
+\c@problem=\count327
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex)) (/workspace/latex/algo/algo.aux)
 \openout1 = `algo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -707,17 +725,17 @@ LaTeX Font Info:    ... okay on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen310
-\scratchbox=\box69
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen311
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count328
+\scratchdimen=\dimen316
+\scratchbox=\box71
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen317
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
@@ -730,32 +748,54 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\Hy@linkcounter=\count332
-\AtBeginShipoutBox=\box70
+\Hy@linkcounter=\count334
+\AtBeginShipoutBox=\box72
  ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.16} (current compat level: 1.9).
 
-\c@lstlisting=\count333
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+ (/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip126
+\RaggedLeftLeftskip=\skip127
+\RaggedRightLeftskip=\skip128
+\CenteringRightskip=\skip129
+\RaggedLeftRightskip=\skip130
+\RaggedRightRightskip=\skip131
+\CenteringParfillskip=\skip132
+\RaggedLeftParfillskip=\skip133
+\RaggedRightParfillskip=\skip134
+\JustifyingParfillskip=\skip135
+\CenteringParindent=\skip136
+\RaggedLeftParindent=\skip137
+\RaggedRightParindent=\skip138
+\JustifyingParindent=\skip139
+)
+\c@lstlisting=\count335
+ (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 76.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
  []
 
@@ -763,24 +803,24 @@ Excluding 'comment' comment.
 <./images/keres.png, id=4, 440.24475pt x 183.68625pt>
 File: ./images/keres.png Graphic file (type png)
 <use ./images/keres.png>
-Package pdftex.def Info: ./images/keres.png  used on input line 107.
-(pdftex.def)             Requested size: 272.78099pt x 113.81102pt.
- [1
+Package pdftex.def Info: ./images/keres.png  used on input line 112.
+(pdftex.def)             Requested size: 136.38713pt x 56.9055pt.
+ Excluding 'comment' comment. [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/keres.png>] (/workspace/latex/algo/algo.aux) ) 
 Here is how much of TeX's memory you used:
- 31297 strings out of 481239
- 754037 string characters out of 5920378
- 1383350 words of memory out of 5000000
- 46023 multiletter control sequences out of 15000+600000
+ 31576 strings out of 481239
+ 758134 string characters out of 5920378
+ 1386373 words of memory out of 5000000
+ 46284 multiletter control sequences out of 15000+600000
  546054 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,98p,850b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,98p,850b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /workspace/latex/algo/algo.pdf (1 page, 144244 bytes).
+Output written on /workspace/latex/algo/algo.pdf (1 page, 144086 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream

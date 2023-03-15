@@ -18,8 +18,10 @@
 \usepackage{psfrag}
 \usepackage{comment}
 \usepackage{pgfplots}
+\usepackage{sidecap}
 \usepackage{bm}
 \usepackage{physics}
+\usepackage{wrapfig}
 \usepackage{listings}
 \def\magyarOptions{suggestions=no} % nem tudom miért de kell ez a sor
 \usepackage[magyar, english]{babel}
@@ -102,10 +104,24 @@ public static int Keres(int[] A, int x) {
 }
 \end{lstlisting}
 \end{comment}
-Példa:
-\begin{center}
-    \includegraphics[height=4cm]{keres}
-\end{center}
-Itt  
+
+\begin{table}
+    \centering
+    \caption{Példa:}
+    \begin{tabular}{cc}
+        \includegraphics[height=2cm]{keres} & Value \\
+    \end{tabular}
+\end{table}
+    \begin{comment}
+\begin{wrapfigure}{l}{0.60\textwidth}
+    \centering
+        \includegraphics[height=4cm]{keres}
+\end{wrapfigure}
+
+Itt Keres$(A,n,x)$ futási ideje: $c_1+(i+1)c_2+ic_3+c_4$
+\[T_{lj} = \min \{T(A,x):|x|=n\}\]
+\[T_{lr} = \max\{T(A,x):|x|=n\}\]
+
+\end{comment}
 
 \end{document}
