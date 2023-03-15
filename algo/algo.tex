@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{comment}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{listings}
+\def\magyarOptions{suggestions=no} % nem tudom miért de kell ez a sor
+\usepackage[magyar, english]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{a4paper}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{mygray}{RGB}{243,243,244}
+\definecolor{deepGreen}{RGB}{26,111,0}
+\definecolor{shallowGreen}{RGB}{235,255,255}
+\definecolor{deepBlue}{RGB}{61,124,222}
+\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\orangebox}[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
+\theoremstyle{myproblemstyle}
+\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm, compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Cím}
+\author{Princzes
+Barnabás}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\selectlanguage{magyar}
+\maketitle
+\begin{abstract}
+    Lent hagytam a füzetem és jövő héten doga szóval time to kick ass!
+    Írjunk egy jó kis jegyzetet.
+\end{abstract}
+\section{Alapok}
+Van a \{$B$\}$A$\{$K$\} azaz a Bemeneti
+feltétel (egy logikai állítás) Algoritmus és Kimeneti feltétel
+(szintén egy logikai állítás).
+\newline
+Legyen $A$ algoritmus. $e_1,\ldots,e_m$ elemi műveletek az algoritmusban
+és $t_i$ az edott $e_i$-hez tartozó időigény. Az algoritmus tényleges futási ideje
+$T(A,x)$ ahol x egy bemenet és a bemenet mérete $|x|$ például
+(tömb, halmaz\ldots) esetében az elemek száma.
+Az $e_i$ és $t_i$ és $|x|$ együtt a bonyolultság mértéke.
+\section{Esetek}
+\begin{itemize}
+    \item Legjobb eset: \[T_{lj} = \min \{T(A,x):|x|=n\}\]
+    \item Legrosszabb eset: \[T_{lr} = \max\{T(A,x):|x|=n\}\]
+    \item Átlagos eset: Legyen $\Pr(x)$ annak
+          a valószínűsége, hogy épp $x$ lesz
+          $A$ algoritmus bemenete, ekkor
+          \newline \[T_a(A,n) = \sum_{|x|=n}\Pr(x)T(A,x)\]
+\end{itemize}
+\begin{comment}
+\begin{lstlisting}[language=Java]
+public static int Keres(int[] A, int x) {
+    int i=0;
+    while (i<A.lenght && A[i]!=x) {
+        i++;
+    }
+    return i;
+}
+\end{lstlisting}
+\end{comment}
+Példa:
+\begin{center}
+    \includegraphics[height=4cm]{keres}
+\end{center}
+Itt  
+
+\end{document}

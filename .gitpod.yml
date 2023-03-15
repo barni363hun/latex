@@ -14,3 +14,4 @@ tasks:
 vscode:
   extensions:
     - efoerster.texlab
+    - James-Yu.latex-workshop
