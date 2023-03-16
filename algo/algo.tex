@@ -16,6 +16,7 @@
 \graphicspath{ {./images/} }
 \usepackage{color}
 \usepackage{psfrag}
+\usepackage[fleqn]{nccmath}
 \usepackage{comment}
 \usepackage{pgfplots}
 \usepackage{sidecap}
@@ -71,14 +72,14 @@ Barnabás}
 \selectlanguage{magyar}
 \maketitle
 \begin{abstract}
-    Lent hagytam a füzetem és jövő héten doga szóval time to kick ass!
-    Írjunk egy jó kis jegyzetet.
+	Lent hagytam a füzetem és jövő héten doga szóval time to kick ass!
+	Írjunk egy jó kis jegyzetet.
 \end{abstract}
 \section{Alapok}
 Van a \{$B$\}$A$\{$K$\} azaz a Bemeneti
 feltétel (egy logikai állítás) Algoritmus és Kimeneti feltétel
 (szintén egy logikai állítás).
-\newline
+\\
 Legyen $A$ algoritmus. $e_1,\ldots,e_m$ elemi műveletek az algoritmusban
 és $t_i$ az edott $e_i$-hez tartozó időigény. Az algoritmus tényleges futási ideje
 $T(A,x)$ ahol x egy bemenet és a bemenet mérete $|x|$ például
@@ -89,19 +90,28 @@ Az $e_i$ és $t_i$ és $|x|$ együtt a bonyolultság mértéke.
 
 \section{Esetek}
 \begin{itemize}
-    \item Legjobb eset: \[T_{lj} = \min \{T(A,x):|x|=n\}\]
-    \item Legrosszabb eset: \[T_{lr} = \max\{T(A,x):|x|=n\}\]
-    \item Átlagos eset: Legyen $\Pr(x)$ annak
-          a valószínűsége, hogy épp $x$ lesz
-          $A$ algoritmus bemenete, ekkor
-          \newline \[T_a(A,n) = \sum_{|x|=n}\Pr(x)T(A,x)\]
+	\item Legjobb eset: \[T_{lj} = \min \{T(A,x):|x|=n\}\]
+	\item Legrosszabb eset: \[T_{lr} = \max\{T(A,x):|x|=n\}\]
+	\item Átlagos eset: Legyen $\Pr(x)$ annak
+	      a valószínűsége, hogy épp $x$ lesz
+	      $A$ algoritmus bemenete, ekkor
+	      \\ \[T_a(A,n) = \sum_{|x|=n}\Pr(x)T(A,x)\]
 \end{itemize}
+\begin{center}
+	\includegraphics[height=4cm]{keres}
+	\\
+	Itt Keres$(A,n,x)$ futási ideje: $c_1+(i+1)c_2+ic_3+c_4$
+\end{center}
 
-\centering
-\includegraphics[height=4cm]{keres}
-
-Itt Keres$(A,n,x)$ futási ideje: $c_1+(i+1)c_2+ic_3+c_4$
-\[T_{lj} = c_1+c_2+c_4 = O(1)\]
-\[T_{lr} = c_1+(n+1)c_2+nc_3+c_4=(c_2+c_3)n+c_1+c_2+c_4=O(n)\]
-
+\begin{fleqn}
+    \begin{equation*}
+        \begin{multlined}
+        T_{lj} = c_1+c_2+c_4 = O(1)\\
+        T_{lr} = c_1+(n+1)c_2+nc_3+c_4=(c_2+c_3)n+c_1+c_2+c_4=O(n)\\
+            \begin{split}
+                T_a(n) = \sum_{i=0}^n  Pr((A,n,x))(c1 + (i+1)c2 +ic3 +c4)
+            \end{split}
+        \end{multlined}
+    \end{equation*}
+\end{fleqn}
 \end{document}
