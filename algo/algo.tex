@@ -290,7 +290,6 @@ $k$ mellé azért, hogy $n$ legyen az összeg a második
 partícióval előállítható eseteket használhatjuk fel.
 
 \end{itemize}
-\subsection{Összetett mi?}
 Felírtunk 4 szabályt:\\
 $P2(n,k) = P2(n,k-1) + P2(n-k,k)\text{, ahol }k<n$\\
 $P2(n,k) = P2(n,n)\,\text{, ahol }n<k$\\
@@ -396,4 +395,28 @@ Majd a fenti lépéseket ismételgetve folytatjuk:
 \begin{center}
     \includegraphics[height=10cm]{rekfa.png}
 \end{center}
+\section{Struktúrák, nagyrészt mutatókkal}
+\subsection{halmazok}
+Matekban sokszor használjuk a halmazokat. 
+Programozásban viszont az algoritmusoknak kell tudni módosítaniuk 
+a halmazokat, az ilyen módosítható halmazokat dinamikus 
+halmazoknak mondjuk.\\
+Egy halmazban az adat általában ilyen tulajdonságokat tárol:
+\begin{itemize}
+    \item kulcs - a manipulációhoz és azonosításhoz
+    \item Satellite mezők - olyan adattagok amik nem érdekesek a 
+    halmaz szempontjából 
+\end{itemize} 
+A halmazon lehet módosítani:
+\begin{itemize}
+    \item $INSERT(S,x)$
+    \item $DELETE(S,x)$
+\end{itemize}
+Továbbá a halmaz adatait is le lehet kérni:
+\begin{itemize}
+    \item $SEARCH(S,k)$ - $k = key[x]$ vagy ha nincs a keresett kulccsal elem a halmazban akkor $NIL$ -t ad vissza.
+    \item $MINIMUM(S)$ - Sorba rendezi az elemeket kulcs szerint és visszadobja a legkissebbet.
+    \item $MAXIMUM(S)$ - Rendez és a legnagyobb kulccsal rendelkezőt dobja vissza.
+    \item $SUCCESSOR(S,x)$ - $x$ ekkor a rendezett $S$ halmaz egy eleme
+\end{itemize}
 \end{document}

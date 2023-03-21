@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  21 MAR 2023 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  21 MAR 2023 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -882,20 +882,20 @@ Overfull \hbox (4.52612pt too wide) in paragraph at lines 281--283
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--300
+Underfull \hbox (badness 10000) in paragraph at lines 293--299
 
  []
 
 <./images//particiok.png, id=62, 329.43076pt x 224.037pt>
 File: ./images//particiok.png Graphic file (type png)
 <use ./images//particiok.png>
-Package pdftex.def Info: ./images//particiok.png  used on input line 301.
+Package pdftex.def Info: ./images//particiok.png  used on input line 300.
 (pdftex.def)             Requested size: 209.19122pt x 142.26378pt.
 [7] [8 <./images//particiok.png>]
 <./images//rekfa.png, id=71, 581.7735pt x 432.4155pt>
 File: ./images//rekfa.png Graphic file (type png)
 <use ./images//rekfa.png>
-Package pdftex.def Info: ./images//rekfa.png  used on input line 397.
+Package pdftex.def Info: ./images//rekfa.png  used on input line 396.
 (pdftex.def)             Requested size: 382.80879pt x 284.52756pt.
  [9] [10 <./images//rekfa.png>] (./algo.aux) ) 
 Here is how much of TeX's memory you used:
@@ -907,7 +907,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,13n,103p,758b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on algo.pdf (10 pages, 375959 bytes).
+Output written on algo.pdf (10 pages, 381706 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
