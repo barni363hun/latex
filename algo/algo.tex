@@ -63,7 +63,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Cím}
+\title{Algo jegyzet}
 \author{Princzes
 Barnabás}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -192,7 +192,6 @@ a legjobb és a legrosszabb eset is ugyanazt a nagyságrendet követi.
     \underline{(0\leq c_1g(n)\leq f(n)\leq c_2g(n))}
     \}\]
 
-\begin{comment}
 \subsection{Nevezetes függvényosztályok}
 
 \begin{center}
@@ -207,7 +206,6 @@ a legjobb és a legrosszabb eset is ugyanazt a nagyságrendet követi.
     Ez utóbbi a legösszetettebb így itt sokkal elővigyázatosabbnak kell lenni mikor
     azt nézzük, hogy melyiknél nagyobb.
 \end{center}
-\end{comment}
 
 \section{Alkalmazás}
 A fenti definíciók következményei:
@@ -229,5 +227,50 @@ A fenti definíciók következményei:
     n!\approx & \sqrt{2\pi n} { \left( \frac{n}{e} \right) }^n\\
 \end{align*}
 
+\section{Rekurzió}
+Egy P függvény rekurzív, ha utasításai közt előfordul P hívása.\\
+Egy rekurzív összefüggés önmagának hívásából és egy 
+leállási feltételből áll. A leállási feltétel a degenerált 
+esetre vezet.   
+\subsection{Partíció}
+Legyen $n$ egy szám ennek egy partíciója az a $\pi$ ahol
+$\pi = \langle a_1,\ldots,a_k\rangle$ olyan $a_i$ számokból álló
+sorozat amelyekre teljesül:
+\begin{align*}
+    \sum_{i=1}^{k}a_i=&\,n\\
+    a_1\geq a_2\geq\ldots&\geq a_k >0
+\end{align*}
+Ezek teljesülésekeor $\pi$ nem más mint $n$-nek 1 partíciója. 
+Jelöljük $P(n)$-el $n$ szám összes partíciójának számát.\\
+\underline{Partíciószám probléma: $P(n)=\,?$}\\
+Mondjuk meg $n$ szám partícióinak számát!\\
+Megoldás:\\
+\begin{itemize}
+    \item
+Vezessünk be egy új jelölést: \\
+Legyen $P(n,k)$ n-szám azon partíciójainak száma ahol $a_i<k$.\\
+\item
+Ezzel egy rekurzív összefüggést kaptunk ezért szükségessé válik
+meghatároznunk a degenerált esetet/eseteket:
+$$ P2(n,1) = P2(1,k) = 1 $$
+Emellett meghatározunk további szabályokat:\\
+$$P2(n,n) = P2(n,n-1) + 1$$
+Példa:\\
+$P2(4,3) = |\Bigl\{\{1,1,1,1\},\{2,2\}\Bigr\}|=2$\\ 
+$P2(4,4) = |\Bigl\{\{1,1,1,1\},\{2,2\},\color{red}\{3,1\}
+\color{black}\Bigr\}|=3$\\
+Egy esettel több mert abban az esetben ha
+\color{red}$a_i$ \color{black} 
+tartalmazza $n-1$ -et akkor \color{red}$a_i$ \color{black}
+másik eleme már csak egy darab $1$-es lehet.
+\item 
+$$P2(n,k) = P2(n,n)\,|\,n<k$$
+Példa:\\
+$P2(4,4) = |\Bigl\{\{1,1,1,1\},\{2,2\},\{3,1\},\Bigr\}|=3$\\
+$P2(4,5) = |\Bigl\{\{1,1,1,1\},\{2,2\},\{3,1\}\Bigr\}|=3$\\
+A második sorban használhatnánk az $5$ -öset valamelyik 
+$a_i$-ben de nem fogjuk mivel akkor ahhoz, hogy a szumma $4$
+legyen $-1$ -et kellene mellé tennünk amit a  
 
+\end{itemize}
 \end{document}
