@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  21 MAR 2023 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.6)  21 MAR 2023 20:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -862,39 +862,55 @@ File: ./images//xpoli.png Graphic file (type png)
 Package pdftex.def Info: ./images//xpoli.png  used on input line 204.
 (pdftex.def)             Requested size: 84.61055pt x 85.35826pt.
  [5 <./images//x.png> <./images//xlogx.png> <./images//xx.png> <./images//2onx.png> <./images//xpoli.png>]
-Overfull \hbox (10.39064pt too wide) in paragraph at lines 242--248
+Overfull \hbox (10.39064pt too wide) in paragraph at lines 242--246
 \OT1/cmr/m/n/10 Ezek tel-jes^^?ul^^Sesekeor $\OML/cmm/m/it/10 ^^Y$ \OT1/cmr/m/n/10 nem m^^Sas mint $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 -nek 1 part^^S^^Pci^^Soja. Jel^^?olj^^?uk $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$-el $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 sz^^Sam ^^?osszes part^^S^^Pci^^Soj^^Sanak
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--248
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Overfull \hbox (4.52612pt too wide) in paragraph at lines 281--283
+[]\OT1/cmr/m/n/10 Mivel r^^Saj^^?ott^^?unk, hogy $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 ge-ner^^Salja a spe-ci^^Salis ese-te-ket el-gon-dol-kod-ha-tunk mi-ben m^^Sas $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 2(\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 )$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--300
 
  []
 
-[7] (./algo.aux) ) 
+<./images//particiok.png, id=62, 329.43076pt x 224.037pt>
+File: ./images//particiok.png Graphic file (type png)
+<use ./images//particiok.png>
+Package pdftex.def Info: ./images//particiok.png  used on input line 301.
+(pdftex.def)             Requested size: 209.19122pt x 142.26378pt.
+[7] [8 <./images//particiok.png>]
+<./images//rekfa.png, id=71, 581.7735pt x 432.4155pt>
+File: ./images//rekfa.png Graphic file (type png)
+<use ./images//rekfa.png>
+Package pdftex.def Info: ./images//rekfa.png  used on input line 397.
+(pdftex.def)             Requested size: 382.80879pt x 284.52756pt.
+ [9] [10 <./images//rekfa.png>] (./algo.aux) ) 
 Here is how much of TeX's memory you used:
- 33391 strings out of 476024
- 816413 string characters out of 5782540
- 1865382 words of memory out of 5000000
- 53215 multiletter control sequences out of 15000+600000
+ 33411 strings out of 476024
+ 816863 string characters out of 5782540
+ 1866382 words of memory out of 5000000
+ 53234 multiletter control sequences out of 15000+600000
  526003 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,103p,758b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on algo.pdf (7 pages, 295066 bytes).
+Output written on algo.pdf (10 pages, 375959 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

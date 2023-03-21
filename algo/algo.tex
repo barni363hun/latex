@@ -232,7 +232,7 @@ Egy P függvény rekurzív, ha utasításai közt előfordul P hívása.\\
 Egy rekurzív összefüggés önmagának hívásából és egy 
 leállási feltételből áll. A leállási feltétel a degenerált 
 esetre vezet.   
-\subsection{Partíció}
+\subsection{Partíciószám probléma: $P(n)=\,?$}
 Legyen $n$ egy szám ennek egy partíciója az a $\pi$ ahol
 $\pi = \langle a_1,\ldots,a_k\rangle$ olyan $a_i$ számokból álló
 sorozat amelyekre teljesül:
@@ -242,36 +242,158 @@ sorozat amelyekre teljesül:
 \end{align*}
 Ezek teljesülésekeor $\pi$ nem más mint $n$-nek 1 partíciója. 
 Jelöljük $P(n)$-el $n$ szám összes partíciójának számát.\\
-\underline{Partíciószám probléma: $P(n)=\,?$}\\
 Mondjuk meg $n$ szám partícióinak számát!\\
-Megoldás:\\
 \begin{itemize}
     \item
 Vezessünk be egy új jelölést: \\
-Legyen $P(n,k)$ n-szám azon partíciójainak száma ahol $a_i<k$.\\
+Legyen $P2(n,k)$ n-szám azon partíciójainak száma ahol $a_i\leq k$.\\
+Ezzel a jelöléssel $P2(n,n)=P(n)$.
 \item
-Ezzel egy rekurzív összefüggést kaptunk ezért szükségessé válik
-meghatároznunk a degenerált esetet/eseteket:
-$$ P2(n,1) = P2(1,k) = 1 $$
-Emellett meghatározunk további szabályokat:\\
+Ez azért segít nekünk mert így fel tudunk írni egy rekurzív feltételt:\\
 $$P2(n,n) = P2(n,n-1) + 1$$
 Példa:\\
-$P2(4,3) = |\Bigl\{\{1,1,1,1\},\{2,2\}\Bigr\}|=2$\\ 
-$P2(4,4) = |\Bigl\{\{1,1,1,1\},\{2,2\},\color{red}\{3,1\}
-\color{black}\Bigr\}|=3$\\
+$P2(4,3) = |\Bigl\{\{3,1\},\{2,2\},\{2,1,1\},\{1,1,1,1\}\Bigr\}|=4$\\ 
+$P2(4,4) = |\Bigl\{\color{red}\{4\}\color{black},\{3,1\},\{2,2\}
+,\{2,1,1\},\{1,1,1,1\}\Bigr\}|=5$\\ 
 Egy esettel több mert abban az esetben ha
 \color{red}$a_i$ \color{black} 
-tartalmazza $n-1$ -et akkor \color{red}$a_i$ \color{black}
-másik eleme már csak egy darab $1$-es lehet.
-\item 
-$$P2(n,k) = P2(n,n)\,|\,n<k$$
+tartalmazza $n$ -et akkor a partíció fogalma miatt nem tartalmazhat mást.
+\item
+Egy rekurzív összefüggésnek viszont szükséges 
+meghatároznunk a degenerált esetet/eseteket:
+$$ P2(n,1) = P2(1,k) = 1 $$
 Példa:\\
-$P2(4,4) = |\Bigl\{\{1,1,1,1\},\{2,2\},\{3,1\},\Bigr\}|=3$\\
-$P2(4,5) = |\Bigl\{\{1,1,1,1\},\{2,2\},\{3,1\}\Bigr\}|=3$\\
-A második sorban használhatnánk az $5$ -öset valamelyik 
-$a_i$-ben de nem fogjuk mivel akkor ahhoz, hogy a szumma $4$
-legyen $-1$ -et kellene mellé tennünk, ezt pedig a 
-partíció fogalma gátolja.
+$P2(4,1) = |\Bigl\{\color{black}\{1,1,1,1\}\color{black}\Bigr\}|=1$\\ 
+$P2(1,4) = |\Bigl\{\color{black}\{1\}\color{black}\Bigr\}|=1$\\ 
+A $4$ -et egyesek összegéből $1$ féle képpen tudjuk kirakni.
+Az $1$ -et megpróbálhatjuk bármilyen nagy számokból kirakni, 
+de csak egy darab $1$-esből tudjuk.
+\item 
+A fenti példából következik, hogy nem csak az egyest hanem a 
+többi számot is feleslegesen próbálnánk meg nálánál 
+nagyobból kirakni:
+$$P2(n,k) = P2(n,n)\,\underline{\text{, ahol }n<k}$$
+Példa:\\
+$P2(4,5) = |\Bigl\{\{4\},\{3,1\},\{2,2\},\{2,1,1\},
+\{1,1,1,1\}\Bigr\}|=5$\\ 
+Nem tudunk $5$ -öst használni mert a definíció gátolja.
+\item
+Mivel rájöttünk, hogy $n$ generálja a speciális eseteket 
+elgondolkodhatunk miben más $P2(n,k)$ és $P2(n,k-1):$
+$$P2(n,k) = P2(n,k-1) + P2(n-k,k)\text{, ahol }k<n$$
+Példa:\\
+$P2(5,3) = |\Bigl\{\{3,2\},\{3,1,1\},\{2,2\},\{2,1,1\},\{1,1,1,1\}\Bigr\}|=5$\\ 
+$P2(5,2) = |\Bigl\{\{2\},\{1,1\}\Bigr\}|=2$\\ 
+$P2(2,3) = |\Bigl\{\{2,2\},\{2,1,1\},\{1,1,1,1\}\Bigr\}|=3$\\ 
+Az első partícióban fellelhető az utolsó partíció összes eleme, ezentúl
+$k$ mellé azért, hogy $n$ legyen az összeg a második 
+partícióval előállítható eseteket használhatjuk fel.
 
 \end{itemize}
+\subsection{Összetett mi?}
+Felírtunk 4 szabályt:\\
+$P2(n,k) = P2(n,k-1) + P2(n-k,k)\text{, ahol }k<n$\\
+$P2(n,k) = P2(n,n)\,\text{, ahol }n<k$\\
+$P2(n,n) = P2(n,n-1) + 1$\\
+$P2(n,1) = P2(1,k) = 1$\\
+Ezek alapján egy programmal így számolnánk:\\
+\begin{center}
+    \includegraphics[height=5cm]{particiok}
+\end{center}
+Viszont nekünk egyszerűbb ha egy táblázatot csinálunk. 
+A táblázat sorindexe legyen $k$, oszlopindexe $n$, cellái pedig 
+$P(n,k)$: 
+
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$&\\
+        6&\\
+        5&\\
+        4&\\
+        3&\\
+        2&\\
+        1&\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+Először töltsük ki ahol $n=1$ vagy $k=1$ ugyanis 
+$P2(n,1) = P2(1,k) = 1$:
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$&1&\\
+        6&1&\\
+        5&1&\\
+        4&1&\\
+        3&1&\\
+        2&1&\\
+        1&1&1&1&1&1&1\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+Mivel $P2(n,n) = P2(n,n-1) + 1$ így $P(2,2)$-őt ki tudjuk tölteni
+úgy, hogy az alatta lévő számhoz hozzáadunk egyet:
+
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$&1&\\
+        6&1&\\
+        5&1&\\
+        4&1&\\
+        3&1&\\
+        2&1&2\\
+        1&1&1&1&1&1&1\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+Innen pedig 2 lehetőség áll fent, kezdjük azzal amikor $n<k$.
+Erre a szabályunk, hogy $P2(n,k) = P2(n,n)\,\text{, ahol }n<k$:
+
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$\\
+        6&1&2\\
+        5&1&2\\
+        4&1&2\\
+        3&1&2\\
+        2&1&2\\
+        1&1&1&1&1&1&1\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+Amikor $n>k$ akkor is megvan a szabályunk:\\
+$P2(n,k) = P2(n,k-1) + P2(n-k,k)\text{, ahol }k<n$\\
+Ez a kitöltés során úgy fog kinézni, hogy $(n,n)$ -től jobbra 
+indulva összeadjuk a kitöltendő cella alatt lévő számot és azt 
+a számot ami tőle balra van $k$-lépésre:
+
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$\\
+        6&1&2\\
+        5&1&2\\
+        4&1&2\\
+        3&1&2\\
+        2&1&2&2&3&3&4\\
+        1&1&1&1&1&1&1\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+
+Majd a fenti lépéseket ismételgetve folytatjuk:
+
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        $\ldots k$\\
+        6&1&2&3&5&7&11\\
+        5&1&2&3&5&7&10\\
+        4&1&2&3&5&6&9\\
+        3&1&2&3&4&5&7\\
+        2&1&2&2&3&3&4\\
+        1&1&1&1&1&1&1\\
+        \midrule&1&2&3&4&5&6& $\ldots n$ \\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[height=10cm]{rekfa.png}
+\end{center}
 \end{document}
