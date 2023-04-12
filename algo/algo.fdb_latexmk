@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1679565804 "c:/Users/barni/programming/latex/algo/algo.tex" "algo.pdf" "algo" 1679565810 0
-  "algo.aux" 1679565810 2294 63498d3e77a4cc5ad9488522430cc257 "pdflatex"
-  "algo.tex" 1679565802 17577 f31312e48a1400d02a4c58ebab0f21d2 ""
+["pdflatex"] 1681301515 "c:/Users/barni/programming/latex/algo/algo.tex" "algo.pdf" "algo" 1681301522 0
+  "algo.aux" 1681301522 2294 63498d3e77a4cc5ad9488522430cc257 "pdflatex"
+  "algo.tex" 1681301512 17588 985cf53dd1e2335f515b1439b1d81a04 ""
   "c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1678129666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1678131174 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/Users/barni/apps/latex/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1678130564 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -248,7 +248,7 @@
   "c:/Users/barni/apps/latex/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1678136749 4662850 52f1aa041e1eeb3cb1fcf72e3462572f ""
   "c:/Users/barni/apps/latex/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678136886 7880388 0d1fd7f09e6e334dffed50c06ace604d ""
   "c:/Users/barni/apps/latex/texlive/2022/texmf.cnf" 1678136711 713 e69b156964470283e0530f5060668171 ""
-  "c:/Users/barni/programming/latex/algo/algo.tex" 1679565802 17577 f31312e48a1400d02a4c58ebab0f21d2 ""
+  "c:/Users/barni/programming/latex/algo/algo.tex" 1681301512 17588 985cf53dd1e2335f515b1439b1d81a04 ""
   "images//2onx.png" 1679060364 8239 4eabed53f297ffe4be3bedce2a5c5871 ""
   "images//keres.png" 1678912172 32113 6cda262aa1f485919613ced45f64c485 ""
   "images//logx.png" 1679060267 10878 4bd4972f460119a6a25828c1e34143df ""
