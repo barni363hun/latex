@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{comment}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{listings}
+\def\magyarOptions{suggestions=no} % nem tudom miért de kell ez a sor
+\usepackage[magyar, english]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{a4paper}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{mygray}{RGB}{243,243,244}
+\definecolor{deepGreen}{RGB}{26,111,0}
+\definecolor{shallowGreen}{RGB}{235,255,255}
+\definecolor{deepBlue}{RGB}{61,124,222}
+\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\orangebox}[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
+\theoremstyle{myproblemstyle}
+\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm, compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Analízis}
+\author{Princzes
+Barnabás}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\selectlanguage{magyar}
+\maketitle
+\begin{abstract}
+    Analízis jegyzet Krasznai pdf-jeiből
+\end{abstract}
+\section{Összetett függvény}
+\subsection{Leírás}
+$fog$ -vel szoktuk jelölni az összetett függvényt más néven kompozíciót.\\
+$(fog)(x) = f(g(x))$ ilyenkor szokás szerint a belső függvénnyel 
+kezdünk szóval $x$-et viszi valahova $g(x)$ ezután pedig az így képezett $y$-okat vesszük 
+$f(x)$ bemenetének, ebből következik, hogy $fog$ értelmezési tartománya ($D(fog)$)
+azok az elemek ahol $g$ és $g$ képe is értelmezve van:
+$$D(fog)=\{x\in D(g)\:|\:g(x)\in D(f)\}$$
+\subsection{Példa}
+$$f(x)=3x+1,\;x\in [0,7]$$
+$$g(x)=x^2-9,\;x\in [0,5]$$
+\subsubsection{Értelmezési tartomány}
+Értelmezési tartomány megadása a képlet szerint:\\
+$D(g)$: $0\leq x\leq 5$\\
+$D(f)$: \underline{$0\leq x^2-9\leq 7$}
+$ => 9\leq x^2\leq 16 => 3\leq \abs{x}\leq 4 => $
+\underline{$-4\leq x\leq -3$ vagy $3\leq x\leq 4$}\\
+Csak ott értelmezhető $f$ ahol $g$ is:\\
+$D(g) \cap D(f) = D(fog) = [3,4]$\\
+\subsubsection{Hozzárendelési utasítás}
+Egyszerűen $f$ függvényébe beletesszük $x$ helyére $g(x)$-et:\\
+$3(x^2-9)+1 = 3x^2-26$
+\subsubsection{Megoldás}
+$(fog)(x) = 3x^2-26,\;x\in [3,4]$
+\subsection{Megjegyzések}
+Ha $D(g) \cap D(f) = \emptyset$ akkor $fog$ nem létezik.
+\section{Inverz függvény}
+\subsection{Leírás}
+$f$ függvény invertálható, ha akárhogyan választunk az értékkészletéből
+két elemet $\bigl(x_1,x_2\in D(f)\bigr)$ akkor képeik nem azonosak
+$\bigl(f(x_1)\neq f(x_2)\bigr)$\\
+$f^{-1}$ inverze $f$-nek, ha $R(f)$-et képezi $D(f)$-be.\\
+Invertálhatóság leolvasható a függvény grafikonjáról is:
+Ha tudunk vízszintes vonalat húzni úgy, hogy kétszer metsze el a függvényt,
+akkor az nem invertálható.\\
+\subsection{Példa}
+$$f(x)=1-x^2,\;x\in (-\infty ,0)$$
+\subsubsection{Létezik $f^{-1}$?}
+Ha $f$ minden kölünböző $x$-ből különböző $f(x)$-be visz akkor két ugyanazon
+$x$-ből ugyanoda kell vinnie.\\
+Jelenleg következik-e a két kép egyezéséből a két kiinulási pont egyezése?\\
+Bizonyítsuk, hogy: $1-x_1^2=1-x_2^2=>x_1=x_2$ ahol $x_1,x_2\in (-\infty,0)$:\\
+Ha elkezdünk számolni $1-x_1^2=1-x_2^2=>x_1^2=x_2^2=>|x_1|=|x_2|$, ami csak negatív számokon
+van értelmezve így csak a negatív $x$-eket kell behelyettesíteni:
+$-x_1=-x_2=>x_1=x_2$\\
+\subsubsection{Értelmezési tartomány}
+$f^{-1}$ értelmezési tartománya $f$ értékkészlete. Elinulunk $D(f)$-ből 
+$x\in (-\infty ,0)=x<0$
+és addig alakítjuk amíg $f$ függvény formáját fel nem veszi:\\
+$x<0=>x^2>0=>-x^2<0=>1-x^2<1$\\
+$D(f^{-1})$
+\end{document}
