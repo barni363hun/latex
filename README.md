@@ -5,3 +5,5 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/barni363hun/latex)
 
 Should pronounce it as latek.
+
+can i do this? $$\sum_{i=0}^\infty x+i$$
