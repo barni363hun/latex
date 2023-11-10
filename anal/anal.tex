@@ -21,8 +21,14 @@
 \usepackage{bm}
 \usepackage{physics}
 \usepackage{listings}
-\def\magyarOptions{suggestions=no} % nem tudom miért de kell ez a sor
-\usepackage[magyar, english]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\input glyphtounicode
+\pdfgentounicode=1
+% \def\magyarOptions{suggestions=no} % nem tudom miért de kell ez a sor
+% \usepackage[magyar, english]{babel}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,16 +72,16 @@ Barnabás}
 
 
 \begin{document}
-\selectlanguage{magyar}
+% \selectlanguage{magyar}
 \maketitle
 \begin{abstract}
-    Analízis jegyzet Krasznai pdf-jeiből
+    Analízis jegyzet Krasznai pdf-jeiből asd
 \end{abstract}
 \section{Összetett függvény}
 \subsection{Leírás}
 $fog$ -vel szoktuk jelölni az összetett függvényt más néven kompozíciót.\\
-$(fog)(x) = f(g(x))$ ilyenkor szokás szerint a belső függvénnyel 
-kezdünk szóval $x$-et viszi valahova $g(x)$ ezután pedig az így képezett $y$-okat vesszük 
+$(fog)(x) = f(g(x))$ ilyenkor szokás szerint a belső függvénnyel
+kezdünk szóval $x$-et viszi valahova $g(x)$ ezután pedig az így képezett $y$-okat vesszük
 $f(x)$ bemenetének, ebből következik, hogy $fog$ értelmezési tartománya ($D(fog)$)
 azok az elemek ahol $g$ és $g$ képe is értelmezve van:
 $$D(fog)=\{x\in D(g)\:|\:g(x)\in D(f)\}$$
@@ -117,7 +123,7 @@ Ha elkezdünk számolni $1-x_1^2=1-x_2^2=>x_1^2=x_2^2=>|x_1|=|x_2|$, ami csak ne
 van értelmezve így csak a negatív $x$-eket kell behelyettesíteni:
 $-x_1=-x_2=>x_1=x_2$\\
 \subsubsection{Értelmezési tartomány}
-$f^{-1}$ értelmezési tartománya $f$ értékkészlete. Elinulunk $D(f)$-ből 
+$f^{-1}$ értelmezési tartománya $f$ értékkészlete. Elinulunk $D(f)$-ből
 $x\in (-\infty ,0)=x<0$
 és addig alakítjuk amíg $f$ függvény formáját fel nem veszi:\\
 $x<0=>x^2>0=>-x^2<0=>1-x^2<1$\\
