@@ -1,0 +1,35 @@
+Design patterns:
+1.
+Egyik legfontosabb az MVC = Model - View - Controller
+
+Több view is lehet ugyanazon controllerhez: táblázat, CLI, GUI...
+Több controller (több program) is csatlakozhat 1 model-hez.
+
+View 
+Egy parancsot kap, a célja bekérése.
+Ne replikáljon = Az interakció miatt ne jelezzük ki a dolgot egyből. A view csak a model változásakor mutassa a változást, csak a controller hatására.
+A view-ban singletonnal hozunk létre 
+
+Contoller
+Elé rakunk egy interface-t ami kommunikál a view-vel.
+Az interface-től mér egy kész osztály (pl. user) megy a Controller-nek.
+
+Model
+Ez elé is lehet rakni egy Manager-t (Interface ottani megfelelője) ami konkrétan csak a tárolásra összpontosít.
+
+2. Singleton
+Egy instance függvénnyel hozzuk létre az osztályt.
+
+class Test{
+	private static Test instance = null;
+	private Test(){};
+	public static Test instance(){
+			if (instance == null){		
+ 			instance = new Test();
+   }
+		return instance;
+	} 
+}
+
+c.Test.instance();
+
