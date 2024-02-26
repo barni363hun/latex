@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage[mathscr]{eucal}
+\usepackage[magyar]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{amsxtra}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{tabularx}
+
+\geometry{top=15mm,left=20mm,right=20mm,bottom=8mm}
+
+\begin{document}
+\pagestyle{empty}
+\noindent
+
+Matematikai programcsomagok
+Gyakorló feladatsor
+3.\ hét
+
+\begin{enumerate}
+    \item \textbf{Feladat.} Végezze el az $f(x)=x^3+2x^2-x-2$ függvény teljes vizsgálatát! \par
+
+          \textbf{Megoldás}
+          \begin{itemize}
+              \item Értelmezési tartomány:
+                    $dom(f)=\mathbb{R}$
+              \item Zérushelyek:
+                    \begin{gather*}
+                        f(x)=x^3+2x^2-x-2=(x-1)(x+1)(x+2) \\
+                        \Downarrow                        \\
+                        x_0=1,x_1=-1,x_2=-2
+                    \end{gather*}
+
+              \item Határértékszámítás $-\infty$-ben és $\infty$-ben:
+
+                    \begin{gather*}
+                        \lim\limits_{x \to -\infty} x^3+2x^2-x-2=-\infty\\
+                        \lim\limits_{x \to \infty} x^3+2x^2-x-2=\infty
+                    \end{gather*}
+
+              \item Menettulajdonságok az elsõ derivált segítségével:
+
+                    \begin{gather*}
+                        f'(x)=3x^2+4x-1=0\\
+                        \Downarrow\\
+                        x_1=-\frac{2}{3}+\frac{\sqrt{7}}{3}\approx-1,549,
+                        \ x_2=-\frac{2}{3}-\frac{\sqrt{7}}{3}\approx-0,215
+                    \end{gather*}
+                    \[
+                        \begin{array}{|c|c|c|c|c|c|}
+                            \hline
+                                  & x<x_1    & x=x_1 & x_1<x_<x_2 & x=x_2 & x<x_2    \\
+                            \hline
+                            f'(x) & +        & 0     & -          & 0     & +        \\
+                            \hline
+                            f(x)  & \nearrow & \max  & \searrow   & \min  & \nearrow \\
+                            \hline
+                        \end{array}
+                    \]
+              \item Görbületi viszonyok a második derivált segítségével:
+
+
+                    \begin{gather*}
+                        f''(x)=6x+4=0\\
+                        \Downarrow\\
+                        x_3=-\frac{2}{3}
+                    \end{gather*}
+                    \[
+                        \begin{array}{|c|c|c|c|}
+                            \hline
+                                   & x<x_3 & x=x_3          & x_3<x \\
+                            \hline
+                            f''(x) & +     & 0              & -     \\
+                            \hline
+                            f(x)   & \cup  & \text{inf. p.} & \cap  \\
+                            \hline
+                        \end{array}
+                    \]
+          \end{itemize}
+
+          \vfill\eject
+    \item \textbf{Feladat.} Számolja ki az $y=x^2-2x+2$ és az $y=14-x^2$ egyenletû görbék által közrezárt korlátos síkidom területét!\\
+          \textbf{Megoldás}
+          \begin{itemize}
+              \item Metszéspontok megkeresése:
+                    \begin{gather*}
+                        x^2-2x+2=14-x^2\\
+                        2(x^2-x-6)=0\\
+                        \Downarrow\\
+                        x_1=-3,\ x_2=2\\
+                    \end{gather*}
+              \item A terület kiszámítása:
+                    \[
+                        \displaystyle\int_{-3}^{2}
+                        -2(x^2-x-6)\ \mathrm{d}x=\left[-\frac{2}{3}x^3+x^2+12x\right]^2_{-3}=\frac{95}{3}
+                    \]
+          \end{itemize}
+
+\end{enumerate}
+
+\vspace{0.2cm}
+\begin{center}
+    \textit{Jó munkát!}
+\end{center}
+
+\end{document}
