@@ -1,0 +1,189 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[
+	top=35mm,
+	left=25mm,
+	right=25mm,
+	bottom=25mm,
+	headheight=55pt,
+	footskip   = 10pt,
+]{geometry}
+%\usepackage{t1enc}
+\usepackage{lmodern} % pdflatex or dvi latex
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+%\setmainfont{Raleway-Regular}
+\usepackage[mathscr]{eucal}
+\usepackage[magyar]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphics}
+\usepackage{amsxtra}
+\usepackage{microtype}
+\usepackage[absolute,overlay]{textpos}
+
+\setlength{\parindent}{0pt}
+%fejléc-----------------------------------------------------------------------
+
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{color, colortbl}
+
+\usepackage{setspace}
+\usepackage{enumitem}    
+
+%functions-----------------------------------------------------------------------
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\arcctg}{arcctg}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\ctg}{ctg}
+
+
+%checkbox, dotfill------------------------------------
+\newcommand{\checkbox}{$\square$}
+\newcommand\fillin[1][3cm]{\makebox[#1]{\dotfill}}
+\newcommand\fillinlong{................................................. }
+\newcommand\fillinshort{........}
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+  
+
+
+
+
+%header and footer---------------------------------------------
+
+\fancypagestyle{face}{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+
+\fancyhead[R]{%
+%  \scshape
+  \color{black}
+Név: \fillinlong osztály:\fillinshort
+\vspace{10pt}
+}
+
+\renewcommand{\footrulewidth}{1pt}
+%\fancyfoot[L]{\vspace{0.2cm}\includegraphics[scale=.2]{mp_presentation_logo}}
+\fancyfoot[L]{Matematika}
+\fancyfoot[R]{
+\vspace{-10pt}
+\begin{spacing}{2pt}
+középszint — írásbeli vizsga 1811 \\ I. összetevő  
+\end{spacing}}
+}
+
+\fancypagestyle{first}{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+
+\fancyhead[L]{%
+%  \scshape
+  \color{black}
+Matematika\\
+középszint}
+\fancyhead[R]{%
+%  \scshape
+  \color{black}
+Név: \fillinlong osztály:\fillinshort
+\vspace{4pt}
+}
+
+\renewcommand{\footrulewidth}{1pt}
+%\fancyfoot[L]{\vspace{0.2cm}\includegraphics[scale=.2]{mp_presentation_logo}}
+\fancyfoot[L]{\vspace{0.2cm}1811 írásbeli vizsga I. összetevő} 
+\fancyfoot[C]{\vspace{0.2cm} \thepage\hspace{2pt} / \hspace{2pt}\pageref{LastPage}}   
+\fancyfoot[R]{\vspace{0.2cm}2018. május 8.}  
+}
+
+
+\usepackage{pgfplots}
+\usepackage{tikz}
+%tikz library setup------------------------------------
+\usetikzlibrary{arrows,positioning,shapes,fit,calc}
+\usetikzlibrary{arrows.meta,shadings,bending}
+\usetikzlibrary{shapes.geometric,positioning}
+\usetikzlibrary{math, shapes.misc}
+\usetikzlibrary{intersections}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{decorations.pathreplacing} 
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{decorations.pathmorphing,shadows}
+\usetikzlibrary{angles,quotes}
+
+\pgfplotsset{compat=1.14}
+
+
+\begin{document}
+
+\pagestyle{face}
+\begin{Huge}
+    \begin{textblock*}{0cm}(2.4cm,4cm)
+        \rotatebox{90}{\textls[120]{\textbf{{\fontsize{30}{0}\selectfont \dunderline[-2pt]{3pt}{ÉRETTSÉGI VIZSGA • 2018. május 8.}}}}}
+    \end{textblock*}
+    \begin{center}
+        \vspace*{3cm}
+        \fontsize{28}{0}\selectfont 
+        \textbf{MATEMATIKA} \\
+        \vspace*{2cm}
+        \textbf{KÖZÉPSZINTŰ \\ ÍRÁSBELI VIZSGA} \\
+        \vspace*{1cm}
+        \fontsize{26}{0}\selectfont 
+        \textbf{2018. május 8. 8:00 } \\
+        \vspace*{1cm}
+        \fontsize{34}{0}\selectfont 
+        \textbf{I.}\\
+        \vspace*{1.5cm}
+        \fontsize{22}{0}\selectfont 
+        Időtartam: 45 perc
+    \end{center}
+    
+    \fontsize{16}{4}\selectfont 
+    \begin{textblock*}{0}(12.5cm,20cm)
+    
+    \begin{table}[ht]
+    \begin{tabular}{|cl|}
+    \hline
+    \multicolumn{2}{|c|}{Pótlapok száma} \\ \hline
+    \multicolumn{1}{|c|}{Tisztázati}  &  \\ \hline
+    \multicolumn{1}{|c|}{Piszkozati}  &  \\ \hline
+    \end{tabular}
+    \end{table}
+    \end{textblock*}
+\end{Huge}
+\newpage
+
+\pagestyle{first}
+
+
+\begin{center}
+\LARGE \textbf{Fontos tudnivalók}\par
+\end{center}
+\vspace{1cm}
+\begin{enumerate}[leftmargin=*,itemsep=0.9cm ]
+
+  \item
+  A feladatok megoldására 45 percet fordíthat, az idő leteltével a munkát be kell fejeznie.
+  \item
+  A megoldások sorrendje tetszőleges. 
+  \item
+  A feladatok megoldásához szöveges adatok tárolására és megjelenítésére nem alkalmas zsebszámológépet és bármilyen négyjegyű függvénytáblázatot használhat, más elektronikus vagy írásos segédeszköz használata tilos! 
+  \item
+  \textbf{A feladatok végeredményét az erre a célra szolgáló keretbe írja}, a megoldást csak akkor kell részleteznie, ha erre a feladat szövege utasítást ad! 
+  \item 
+  A dolgozatot tollal írja, az ábrákat ceruzával is rajzolhatja. Az ábrákon kívül a ceruzával írt
+részeket a javító tanár nem értékelheti. Ha valamilyen megoldást vagy megoldásrészletet
+áthúz, akkor az nem értékelhető. 
+\item 
+Minden feladatnak csak egy megoldása értékelhető. Több megoldási próbálkozás esetén
+egyértelműen jelölje, hogy melyiket tartja érvényesnek! 
+\item 
+Kérjük, hogy \textbf{a szürkített téglalapokba semmit ne írjon!} 
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,329 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  prettier-plugin-latex:
+    specifier: ^1.2.4
+    version: 1.2.4
+
+packages:
+
+  /@types/unist@2.0.10:
+    resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
+    dev: false
+
+  /@unified-latex/unified-latex-builder@1.7.1:
+    resolution: {integrity: sha512-YLeIodB+CETXkPTHkSp04+NCSMc5IbC0yjE/WtqoKJnBCl/DGIUeH2PbLc/ptguugwQaTo4hfgGCoPcgFtGn0g==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-ctan@1.7.1:
+    resolution: {integrity: sha512-8TbY9MKuE0VUVtyIu2E6dPsj/yYcUg7EyJwc4GaJfcW2JY75gZz5vlJ+sBzZ/mW0ZraSjqacCpqQ7EzhbBiA8w==}
+    dependencies:
+      '@unified-latex/unified-latex-builder': 1.7.1
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-argspec': 1.7.1
+      '@unified-latex/unified-latex-util-arguments': 1.7.1
+      '@unified-latex/unified-latex-util-comments': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-pegjs': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      '@unified-latex/unified-latex-util-render-info': 1.7.1
+      '@unified-latex/unified-latex-util-replace': 1.7.1
+      '@unified-latex/unified-latex-util-scan': 1.7.1
+      '@unified-latex/unified-latex-util-split': 1.7.1
+      '@unified-latex/unified-latex-util-trim': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      color: 4.2.3
+    dev: false
+
+  /@unified-latex/unified-latex-prettier@1.7.1:
+    resolution: {integrity: sha512-MTFjJRx3+iiWkTNyujU5LnyqNmxv4+khbp/73uJCrD/yTGcRntQpmIZl6O06kUAKF517e7tzeqNW+y9iXdyJNQ==}
+    dependencies:
+      '@unified-latex/unified-latex-ctan': 1.7.1
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-align': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-parse': 1.7.1
+      '@unified-latex/unified-latex-util-pgfkeys': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      '@unified-latex/unified-latex-util-trim': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      prettier: 3.2.5
+    dev: false
+
+  /@unified-latex/unified-latex-types@1.7.1:
+    resolution: {integrity: sha512-WpwM9FxJi5gEvxYYWdbtcVutNgh52lHL3c1cU82pxRdJ4ltqdmDzLwZbqnWrQxOmsmVSeyaxAfOYQpv7B016CA==}
+    dev: false
+
+  /@unified-latex/unified-latex-util-align@1.7.1:
+    resolution: {integrity: sha512-MCoGG8OPVcJGxF0oiy8ql6a3/H2Ex5tMvRKI5s9ttDreXXzZpTHONJWEz7I57Wy3cCCy9leoVp9za3U1aDdImQ==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-pegjs': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-argspec@1.7.1:
+    resolution: {integrity: sha512-f+GTU6XwgSJsrOzyFxY7XR8dx7xOKChQ5mJQkHgS1suLDrmKzqDDZlp/2Dl5CUeNO7P166laWVJcaQjzQVcfIw==}
+    dependencies:
+      '@unified-latex/unified-latex-util-pegjs': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-arguments@1.7.1:
+    resolution: {integrity: sha512-hVYqPAoZfRm9+PgmGdPLpvYJGx2CKrctgGGwqoYmmfxRikSgDVBjVuVk6I8x5JR1+2Zbakw8gNTRspN65eDj1A==}
+    dependencies:
+      '@unified-latex/unified-latex-builder': 1.7.1
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-argspec': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-render-info': 1.7.1
+      '@unified-latex/unified-latex-util-scan': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      unified: 10.1.2
+    dev: false
+
+  /@unified-latex/unified-latex-util-catcode@1.7.1:
+    resolution: {integrity: sha512-s7jZAiMF4LkkD9eaIaWL0gDg2tRow7iuJKVmKJwGgvUIr4Di5LuE2lbqLMV2ytWchmMFwC0Y6dW6rHSOiHlRjQ==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-comments@1.7.1:
+    resolution: {integrity: sha512-0JOHbwuC6CZHS7nTQDxN6rv02ty0chXQ/rrtFnXQjcEmIYRGcNrtTC50AfYMDGlt329+Ul/7rCixoEePL/ZWFQ==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-replace': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-environments@1.7.1:
+    resolution: {integrity: sha512-OTSoLg7B+7yFw3hwv3pc8OlRzrOvVasK7QvMBMtrAVfYmDaVFEnuoc1ru8XGeOaI6ua3thrYl8SjbkI2lH42OA==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-arguments': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      '@unified-latex/unified-latex-util-render-info': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      unified: 10.1.2
+    dev: false
+
+  /@unified-latex/unified-latex-util-match@1.7.1:
+    resolution: {integrity: sha512-UGZyuq3KQ8BPy+2W0Fm47/T2m6IzZ5AqdOPEzvAZrbanmAfUFfIcsXAFz7eZsxACQDebeIiBfyo/Mm5MKCw16Q==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-parse@1.7.1:
+    resolution: {integrity: sha512-o6JQ5U+NrM0Pt8uOUotRV5xmRNsbzK1yn90EOZimPLhJB+clzys0vSD9FhvAA4vdTYS5AC3BsMfWzFt8zT+2Jg==}
+    dependencies:
+      '@unified-latex/unified-latex-ctan': 1.7.1
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-arguments': 1.7.1
+      '@unified-latex/unified-latex-util-catcode': 1.7.1
+      '@unified-latex/unified-latex-util-environments': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-pegjs': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      '@unified-latex/unified-latex-util-trim': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      unified: 10.1.2
+    dev: false
+
+  /@unified-latex/unified-latex-util-pegjs@1.7.1:
+    resolution: {integrity: sha512-YTmUDUvcz5IdtuGgwyYXoIAmYB7hL1zwuCDifZnMn1mKSc6QNB1XcnpLm2J3msLp6PlBVM1ouPZ8JJJOzRktjw==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-pgfkeys@1.7.1:
+    resolution: {integrity: sha512-R1vyEtMKb9Ne/9LiSO7/oDiladoFpPmsYyODRmaUQ7naLHG/YK9TBcqt+YEoSJh9cDa/QCoJcMfYDTipDidL/A==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-pegjs': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-print-raw@1.7.1:
+    resolution: {integrity: sha512-63Tgz85Q4YUrnqoba5xIE23eeGErVZqaTk/kFCth/1Cc/fMulU6LJtineDcjQta1nA2X08Srog4ugfanZMgevQ==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-render-info@1.7.1:
+    resolution: {integrity: sha512-daKkSRR729qz4tq78sCTk2TH38ruORZTmTv9Z+6uvznfXuXsuwH+xbs/7tPsALvHoAT5KLbjZaMdJBGBX8uLVA==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-replace@1.7.1:
+    resolution: {integrity: sha512-4hrQqBMxt1eUQGoaohzNhl9XrCwsXEBeGu9BTb6oEn1GcsNrLDUCToiPvqHX9KipM8eh9grUJjqaTDPDt7FiZg==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-split': 1.7.1
+      '@unified-latex/unified-latex-util-trim': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      unified: 10.1.2
+    dev: false
+
+  /@unified-latex/unified-latex-util-scan@1.7.1:
+    resolution: {integrity: sha512-zHA49YW8J//dHyqH4WuelHz1S0HRDYwSlvxYEeNqXluuDf4rkQC6n1HHv/MqguMIp9rCU9D8Po8Kx01kI1pBUQ==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      trie-prefix-tree: 1.5.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-split@1.7.1:
+    resolution: {integrity: sha512-nWRP3ZZIOO/iKEldw/+9j/7jlTsyU3YFCNJJ9jQ/g53GTEWz72vj5vAM41mXOhzy8G0tkDOLUzu0thYKg0m+Iw==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+    dev: false
+
+  /@unified-latex/unified-latex-util-trim@1.7.1:
+    resolution: {integrity: sha512-qFj8pG8jIGPXXl5gFKQ+J1crdQOm+1Q3qv6aF0rtaN9qZdiTKc3E8zptR0JHWVK1lo4kkt9yMP8f84nnpBsCMw==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+      '@unified-latex/unified-latex-util-visit': 1.7.1
+      unified: 10.1.2
+    dev: false
+
+  /@unified-latex/unified-latex-util-visit@1.7.1:
+    resolution: {integrity: sha512-G9DWrGTs3ZDlTxAhtlACIU1Nnuy6W13guIahtNPrmUkO24EPqnw2auwWjGbeTnf03hwoEopibst+ExrswDwt1A==}
+    dependencies:
+      '@unified-latex/unified-latex-types': 1.7.1
+      '@unified-latex/unified-latex-util-match': 1.7.1
+    dev: false
+
+  /bail@2.0.2:
+    resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
+    dev: false
+
+  /color-convert@2.0.1:
+    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
+    engines: {node: '>=7.0.0'}
+    dependencies:
+      color-name: 1.1.4
+    dev: false
+
+  /color-name@1.1.4:
+    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    dev: false
+
+  /color-string@1.9.1:
+    resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    dependencies:
+      color-name: 1.1.4
+      simple-swizzle: 0.2.2
+    dev: false
+
+  /color@4.2.3:
+    resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
+    engines: {node: '>=12.5.0'}
+    dependencies:
+      color-convert: 2.0.1
+      color-string: 1.9.1
+    dev: false
+
+  /extend@3.0.2:
+    resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
+    dev: false
+
+  /is-arrayish@0.3.2:
+    resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    dev: false
+
+  /is-buffer@2.0.5:
+    resolution: {integrity: sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==}
+    engines: {node: '>=4'}
+    dev: false
+
+  /is-plain-obj@4.1.0:
+    resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /prettier-plugin-latex@1.2.4:
+    resolution: {integrity: sha512-FY83lz01385CK+cW4pC642oftuo1fqXRfyOoszEIno3ZwRqCeUTPb6gMX2ARse3xrvaua9FTY4q6v8l/h6DUGQ==}
+    engines: {node: '>= 10.0'}
+    dependencies:
+      '@unified-latex/unified-latex-prettier': 1.7.1
+      '@unified-latex/unified-latex-util-parse': 1.7.1
+      '@unified-latex/unified-latex-util-print-raw': 1.7.1
+      prettier: 2.8.8
+    dev: false
+
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /simple-swizzle@0.2.2:
+    resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    dependencies:
+      is-arrayish: 0.3.2
+    dev: false
+
+  /trie-prefix-tree@1.5.1:
+    resolution: {integrity: sha512-Jjvj/dA97wXnabG/NLJUgo4IQMj6vucH+Qxm7of/omfWSmZlPqdRU6Ta4GmQqCZH+n3/iYZUwfvUoEhB0Hs83Q==}
+    dev: false
+
+  /trough@2.2.0:
+    resolution: {integrity: sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==}
+    dev: false
+
+  /unified@10.1.2:
+    resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
+    dependencies:
+      '@types/unist': 2.0.10
+      bail: 2.0.2
+      extend: 3.0.2
+      is-buffer: 2.0.5
+      is-plain-obj: 4.1.0
+      trough: 2.2.0
+      vfile: 5.3.7
+    dev: false
+
+  /unist-util-stringify-position@3.0.3:
+    resolution: {integrity: sha512-k5GzIBZ/QatR8N5X2y+drfpWG8IDBzdnVj6OInRNWm1oXrzydiaAT2OQiA8DPRRZyAKb9b6I2a6PxYklZD0gKg==}
+    dependencies:
+      '@types/unist': 2.0.10
+    dev: false
+
+  /vfile-message@3.1.4:
+    resolution: {integrity: sha512-fa0Z6P8HUrQN4BZaX05SIVXic+7kE3b05PWAtPuYP9QLHsLKYR7/AlLW3NtOrpXRLeawpDLMsVkmk5DG0NXgWw==}
+    dependencies:
+      '@types/unist': 2.0.10
+      unist-util-stringify-position: 3.0.3
+    dev: false
+
+  /vfile@5.3.7:
+    resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
+    dependencies:
+      '@types/unist': 2.0.10
+      is-buffer: 2.0.5
+      unist-util-stringify-position: 3.0.3
+      vfile-message: 3.1.4
+    dev: false
