@@ -23,6 +23,12 @@
 \usepackage{amsxtra}
 \usepackage{microtype}
 \usepackage[absolute,overlay]{textpos}
+\usepackage{array}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+
 
 \setlength{\parindent}{0pt}
 %fejléc-----------------------------------------------------------------------
@@ -128,32 +134,43 @@ Név: \fillinlong osztály:\fillinshort
     \end{textblock*}
     \begin{center}
         \vspace*{3cm}
-        \fontsize{28}{0}\selectfont 
+        \fontsize{28}{0pt}\selectfont 
         \textbf{MATEMATIKA} \\
         \vspace*{2cm}
         \textbf{KÖZÉPSZINTŰ \\ ÍRÁSBELI VIZSGA} \\
         \vspace*{1cm}
-        \fontsize{26}{0}\selectfont 
+        \fontsize{26}{0pt}\selectfont 
         \textbf{2018. május 8. 8:00 } \\
         \vspace*{1cm}
-        \fontsize{34}{0}\selectfont 
+        \fontsize{34}{0pt}\selectfont 
         \textbf{I.}\\
         \vspace*{1.5cm}
-        \fontsize{22}{0}\selectfont 
-        Időtartam: 45 perc
+        \fontsize{22}{0pt}\selectfont 
+        Időtartam: 45 perc \\
+        \vspace*{\fill}
+        \fontsize{18}{0pt}\selectfont 
+        \textbf{EMBERI ERŐFORRÁSOK MINISZTÉRIUMA}
     \end{center}
     
     \fontsize{16}{4}\selectfont 
-    \begin{textblock*}{0}(12.5cm,20cm)
+    \begin{textblock*}{0pt}(13cm,20cm)
+    
+    \setlength\extrarowheight{12pt}
+
+% https://tex.stackexchange.com/questions/159257/increase-latex-table-row-height
     
     \begin{table}[ht]
     \begin{tabular}{|cl|}
     \hline
-    \multicolumn{2}{|c|}{Pótlapok száma} \\ \hline
-    \multicolumn{1}{|c|}{Tisztázati}  &  \\ \hline
-    \multicolumn{1}{|c|}{Piszkozati}  &  \\ \hline
+    \multicolumn{2}{|M{5cm}|}{Pótlapok száma} \\[2pt]
+    \hline
+    \multicolumn{1}{|c|}{Tisztázati}  &  \\[2pt]
+    \hline
+    \multicolumn{1}{|c|}{Piszkozati}  &  \\[2pt]
+    \hline
     \end{tabular}
     \end{table}
+    
     \end{textblock*}
 \end{Huge}
 \newpage
