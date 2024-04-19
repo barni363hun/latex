@@ -4,12 +4,18 @@ image:
 tasks:
   - name: Installing prettier-plugin-latex
     command: npm i prettier-plugin-latex
-  - name: LaTeX auto-rebuild
+  # - name: LaTeX auto-rebuild latexmk
+  #   command: >
+  #     while find . -name '*.tex' | xargs inotifywait -qqre modify .; do \
+  #       latexmk -lualatex -pdf ; \
+  #     done
+  - name: LaTeX auto-rebuild lualatex
     command: >
       while find . -name '*.tex' | xargs inotifywait -qqre modify .; do \
-        latexmk -lualatex -pdf ; \
+        lualatex -interaction=nonstopmode -synctex=1 -halt-on-error -output-format=pdf main.tex ; \
       done
-  - name: Terminal
+
+
 
 vscode:
   extensions:
